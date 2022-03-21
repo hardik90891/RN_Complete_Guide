@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import type {Node} from 'react';
+import React, { useState } from 'react';
 
 import {
     View,
@@ -8,9 +7,12 @@ import {
     TouchableOpacity
 } from 'react-native';
 
-const GoalItem: () => Node = props => {
-    return(
-        <TouchableOpacity activeOpacity={0.8} onPress={props.onDelete}>
+const GoalItem = props => {
+    return (
+        <TouchableOpacity
+            activeOpacity={0.8}
+            onPress={props.onDelete.bind(this, props.id)}
+        >
             <View style={styles.listItem}>
                 <Text>{props.title}</Text>
             </View>
@@ -19,13 +21,13 @@ const GoalItem: () => Node = props => {
 };
 
 const styles = StyleSheet.create({
-    listItem:{
+    listItem: {
         padding: 10,
         marginVertical: 10,
         backgroundColor: '#ccc',
         borderColor: 'black',
         borderWidth: 1
-      }
+    }
 });
 
 export default GoalItem;

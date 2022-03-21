@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RN_Complete_Guide.iml" filepath="$PROJECT_DIR$/.idea/modules/RN_Complete_Guide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RN_Complete_Guide.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RN_Complete_Guide.app.iml" />
+    </modules>
+  </component>
+</project>
